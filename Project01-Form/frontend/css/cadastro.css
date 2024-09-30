@@ -11,7 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     font-family: "Poppins", sans-serif;
-    background-color: #58678d;
+    background-color: #023535;
 }
 
 .form {
@@ -31,27 +31,27 @@ body {
     font-size: 26px;
 }
 .header .line {
-    border: 1px solid #58678d;
+    border: 1px solid #023535;
     width: 70px;
     height: 2px;
 }
 .header .btn-login a{
-    color: #58678d;
+    color: #023535;
     background-color: transparent;
-    border: 2px solid #58678d;
+    border: 2px solid #023535;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
     transition: 0.5s;
-    border: 1px solid #58678d;
+    border: 1px solid #023535;
     text-decoration: none;
-    color: #58678d;
+    color: #023535
 }
 
 .header .btn-login a:hover {
     color: white;
-    background-color: #58678d;
+    background-color: #023535;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     transition: 0.5s;
@@ -72,12 +72,12 @@ body {
     height: 30px;
     float: right;
     border-radius: 5px;
-    border: 1px solid #58678d;
+    border: 1px solid #023535;
     text-indent: 5px;
     outline: none;
 }
 .form .input-group .input-box input:focus-visible {
-    outline: 1px solid #58678d;
+    outline: 1px solid #023535;
     
 }
 .btn-cadastrar {
@@ -86,7 +86,7 @@ body {
 }
 .btn-cadastrar button {
     padding: 10px 30px 10px 30px;
-    background-color: #58678d;
+    background-color: #023535;
     color: white;
     cursor: pointer;
     border: none;

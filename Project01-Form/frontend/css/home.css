@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Raleway:wght@200&family=Sassy+Frass&family=Ubuntu:wght@300;400;500;700&display=swap'); /* Fonte da LOGO*/
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Ibarra+Real+Nova&family=Raleway:wght@200&family=Sassy+Frass&family=Ubuntu:wght@300;400;500;700&display=swap'); /* Fonte do MENU*/
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+header { /* cabeçalho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+.logo { /* Titulo da LOGO */
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 16px;
+    color: #023535;
+}
+
+.menu ul{ /* Deixando o menu em Horizontal */
+    display: flex;
+    gap: 3rem;
+}
+.menu ul li { /* Retirando o simbolo da lista*/
+    list-style: none;
+}
+.menu ul li a { /* Colocando cor, fonte, tamanho das palavras do menu */
+    text-decoration: none;
+    font-family: 'Ibarra Real Nova', serif;
+    color: #023535;
+    font-size: 16px;
+}
+.menu ul li::after{ /* Colocando um efeito de criação de uma linha horizontal no menu */
+    content: "";
+    background: #023535;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -8px;
+    display: block;
+    opacity: 0;
+    transition: all 0.6s;
+    pointer-events: none;
+}
+.menu ul li:hover::after { /* Para deixa visivel a linha horizontal do menu (Quando passa o mouse */
+    opacity: 1;
+}
+
+header .btn-group { /* Mexendo nas posições do button do header*/
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+header .btn-group a { /* colocando cor, tamanho, fonte nas tag <a> do header */
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Ibarra Real Nova', serif;
+    color: #023535;
+    padding: 10px;
+    font-weight: 400;
+}
+header .btn-group a:hover { /* Colocando um efeito na tag <a> a header*/
+    background-color: #023535;
+    color: white;
+    border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+header .btn-group .line { /*  criando uma linha vertical entre os button do header */
+    width: 2px;
+    height: 20px;
+    background-color: #023535;
+}
