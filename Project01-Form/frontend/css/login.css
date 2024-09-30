@@ -6,19 +6,18 @@
 }
 
 body {
+    font-family: "Poppins", sans-serif;
+    background-color: #58678d;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: "Poppins", sans-serif;
-    background-color: #58678d;
 }
 
 .form {
-    width: 500px;  /* Ajusta a largura */
-    height: 400px; 
-    background-color: #fff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.632);
+    background-color: white;
+    width: 400px;
+    height: 300px;
     border-radius: 20px;
     padding: 20px;
 }
@@ -27,15 +26,10 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.header .title h2 {
-    font-size: 26px;
+.header .title {
+    font-size: 26pxs;
 }
-.header .line {
-    border: 1px solid #58678d;
-    width: 70px;
-    height: 2px;
-}
-.header .btn-login a{
+.header .btn-cadastro a{
     color: #58678d;
     background-color: transparent;
     border: 2px solid #58678d;
@@ -48,23 +42,30 @@ body {
     text-decoration: none;
     color: #58678d;
 }
-
-.header .btn-login a:hover {
+.header .btn-cadastro a:hover {
     color: white;
     background-color: #58678d;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     transition: 0.5s;
 }
+.line {
+    background-color: #58678d;
+    width: 40px;
+    height: 2px;
+}
 
 .input-group {
     display: flex;
-    gap: 2px;
     flex-direction: column;
+}
+.form .input-group {
+    margin-top: 2rem;
 }
 .form .input-group .input-box {
     margin-top: 2rem;
-}.form .input-group .input-box label {
+}
+.form .input-group .input-box label {
     font-weight: 600;
 }
 .form .input-group .input-box input{
@@ -80,31 +81,15 @@ body {
     outline: 1px solid #58678d;
     
 }
-.btn-cadastrar {
+.form .btn-entrar {
     text-align: center;
     margin-top: 1.5rem;
 }
-.btn-cadastrar button {
-    padding: 10px 30px 10px 30px;
-    background-color: #58678d;
+.form .btn-entrar button {
     color: white;
-    cursor: pointer;
+    background-color: #58678d;
     border: none;
+    cursor: pointer;
+    padding: 10px 30px 10px 30px;
     border-radius: 8px;
-    font-size: 16px;
 }
-
-
-/* Para navegadores Webkit (Chrome, Safari, Edge) */
-/* para retirar as setas que ficam no input de number */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
-}
-
-/* Para Firefox */
-/* para retirar as setas que ficam no input de number */
-/* input[type=number] {
-    -moz-appearance: textfield;
-}  */
